@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include includes/head-meta %>
+    <title><%= title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/vendor/iealert/style.css"/>
+    <link rel="stylesheet" href="/bootstrap2.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="/javascripts/vendor/iealert.min.js"></script>
+    <script src="/javascripts/client.js";></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="title" class="span1">
+          <h4><%= title %></h4>
+        </div>
+        <div  id="menu" class="span11">
+          <a id="blueBtn"      class="btn btn-small btn-primary" href="#" data='{"type":"postit","color":"primary"}'>&nbsp;</a>
+          <a id="lightblueBtn" class="btn btn-small btn-info"    href="#" data='{"type":"postit","color":"info"}'>&nbsp;</a>
+          <a id="greenBtn"     class="btn btn-small btn-success" href="#" data='{"type":"postit","color":"success"}'>&nbsp;</a>
+          <a id="orangeBtn"    class="btn btn-small btn-warning" href="#" data='{"type":"postit","color":"warning"}'>&nbsp;</a>
+          <a id="redBtn"       class="btn btn-small btn-danger"  href="#" data='{"type":"postit","color":"danger"}'>&nbsp;</a>
+          <a id="blackBtn"     class="btn btn-small btn-inverse" href="#" data='{"type":"postit","color":"inverse"}'>&nbsp;</a>
+          <a id="whiteBtn"     class="btn btn-small"             href="#" data='{"type":"postit","color":"none"}'>&nbsp;</a>
+          <a id="starBtn"      class="btn btn-small "href="#" data='{"type":"stamp" ,"stamp":"#9733","color":"yellow"}'>&#9733;</a>
+          <a id="rhythmBtn"    class="btn btn-small "href="#" data='{"type":"stamp" ,"stamp":"#9834","color":"black"}'>&#9834;</a>
+          <a id="checkBtn"     class="btn btn-small "href="#" data='{"type":"stamp" ,"stamp":"#10003","color":"red"}'>&#10003;</a>
+          <select class="span2" id="canvasSel">
+            <option>Plain</option>
+            <option>None</option>
+            <option>Grid</option>
+            <option>x-y</option>
+            <option>x-y#2</option>
+          </select>
+          <a id="clearBtn" class="btn btn-small "href="#"><i class="icon-trash"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="soften">
+
+    <div class="container">
+      <div class="row">
+        <div class="span12" id="mainboardDiv">
+        </div>
+      </div>
+    </div>
+    <% include includes/footer %>
+    <script src='/bootstrap2.1.0/js/bootstrap.min.js'></script>
+    <% include includes/ga %>
+  </body>
+</html>

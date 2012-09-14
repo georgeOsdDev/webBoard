@@ -1,0 +1,52 @@
+{
+  "name": "webBoard",
+  "version": "0.0.1-5",
+  "description": "Realtime online whiteboard app.",
+  "homepage": "https://github.com/georgeOsdDev/webBoard",
+  "keywords": [
+    "whiteboard",
+    "websocket",
+    "coffee-script",
+    "realtime"
+  ],
+  "author": {
+    "name": "Oshida Takeharu",
+    "email": "georgeosddev@gmail.com",
+    "url": "http://george-osd-site.cloudfoundry.com/"
+  },
+  "maintainers": [
+    {
+      "name": "Oshida Takeharu",
+      "email": "georgeosddev@gmail.com",
+      "url": "https://github.com/georgeOsdDev/webBoard"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/georgeOsdDev/webBoard/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://creativecommons.org/licenses/MIT/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgeOsdDev/webBoard.git"
+  },
+  "dependencies": {
+    "coffee-script": "1.3.x",
+    "express": "3.0.0rc3",
+    "socket.io": "0.9.x",
+    "ejs": "0.8.2",
+    "stylus": "0.29.0",
+    "nib": "0.8.2"
+  },
+  "subdomain": "webBoard",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

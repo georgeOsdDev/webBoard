@@ -1,0 +1,116 @@
+// style.styl convert to style.css
+
+@import 'nib'
+
+minimumHeight()
+  min-height arguments
+  height auto !important
+  height arguments
+
+#mainboardDiv
+  minimumHeight(600px)
+  background-color whiteSmoke
+  text-shadow 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075)
+  box-shadow inset 0 3px 7px rgba(0,0,0,.2) inset 0 -3px 7px rgba(0,0,0,.2)
+  background-size contain
+
+#title
+  padding 5px 0 0 0
+
+h1
+h2
+h3
+h4
+h5
+h6
+  font-family 'Gloria Hallelujah' ,cursive
+
+#menu
+  padding 0px
+  margin-top 6px
+
+#menu select
+  width 80px
+  height 26px
+  margin 6px 0 6px 0
+  padding-bottom 2px
+
+#mainboard
+  z-index -1
+
+.obj-init
+  position absolute
+  top 40px
+  left 40px
+  display none
+
+.postit
+  width 150px
+  height 100px
+  float left
+  margin 10px
+  padding 10px
+  box-shadow 3px 3px 5px #656565
+  border-radius 10px
+  transform rotate(-1deg)
+
+.postit:hover
+  cursor move
+
+post()
+  background-color transparent
+  border none
+  width 140px
+  height 90px
+  padding 5px 5px 5px 5px
+  resize none
+  font-family 'Gloria Hallelujah' ,cursive
+  transform rotate(1deg)
+
+.post-primary
+.post-inverse
+  post()
+  color white
+  border-style none
+.post-info
+.post-success
+.post-warning
+.post-danger
+  post()
+  color black
+
+.post-none
+  post()
+  color black
+  box-shadow none
+
+.btn-none
+  box-shadow none
+
+.stamp
+  width 24px
+  font-size 36px
+  z-index 10
+  text-shadow 1px 2px 2px #656565
+
+.stamp:hover
+  cursor move
+
+hrsoften()
+  height 1px
+  background-image linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0))
+  border 0
+
+.close-margin
+  margin -15px
+
+hr.soften
+  margin 5px 0 5px 0
+  hrsoften()
+
+.footer
+  padding 10px 0
+  margin-top 10px
+
+.footer p
+  margin-bottom 0

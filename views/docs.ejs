@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include includes/head-meta %>
+    <title><%= title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/bootstrap2.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/vendor/prettify.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script type="text/javascript" src="/javascripts/vendor/prettify.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="page-header">
+          <h2><%= title %></h2>
+            <p>
+              webBoard is simple online memo tool.It helps your team to have a discussion or brainstorming at online.<br>
+              Install it on your local PC and run it in your local-netowork.
+            </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="span16">
+          <h4>Getting Started</h4>
+          <p>
+            0.webBoard is node.js application, so install node.js runtime first of all.<br>
+            1.And then clone sources from repository.
+          </p>
+          <pre class="prettyprint">git clone git://github.com/georgeOsdDev/webBoard.git</pre>
+          <p>2.Go to directory and install dependencies.</p>
+          <pre class="prettyprint">
+cd webBoard
+npm install</pre>
+          <p>3.Start application with Node.js</p>
+          <pre class="prettyprint">node app.js</pre>
+          <p>4.Visit <a href="#">loclahost:3000</a> or <a href="#">http://&lt;Your IP-Adress Here&gt;:3000</a> with modern browser.</p>
+          <h4>View Source</h4>
+          <ul>
+            <li><a href='/docs/server.html'>server</a></li>
+            <li><a href='/docs/client.html'>client</a></li>
+          </ul>
+
+          <h4>Licence</h4>
+          <p>Source code is 100% opensourced under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a> Licence.And can be founde at <a href="https://github.com/georgeOsdDev/webBoard" target="_blank">github.</a><br>
+          Start hacking away.</p>
+
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load",prettyPrint,false);
+    </script>
+  </body>
+</html>

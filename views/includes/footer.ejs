@@ -1,0 +1,22 @@
+<div id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div id="footerMain" class="span12">
+        <button type="button" class="close" data-dismiss="alert">Hide<i class="icon-remove"></i></button>
+        <p>WebBoard is realtime synchronized online memo tool.
+        <p>Server-Side powerd by <a href="http://nodejs.org/" target="_blank" title="Node.js">Node.js</a> with npm modules (<a href="http://coffeescript.org/" target="_blank" title="Coffee-Script">Coffee-Script</a>, <a href="http://expressjs.com/" target="_blank" title="express">express</a>, <a href="http://socket.io/" target="_blank" title="Socket.IO">Socket.IO</a>, <a href="http://embeddedjs.com/" target="_blank" title="ejs">ejs</a>, <a href="http://learnboost.github.com/stylus/" target="_blank" title="stylus">stylus</a>).
+        <p>Client-Side powerd by <a href="http://jquery.com/" target="_blank" title="jQuery">jQuery</a>, <a href="http://jqueryui.com/" target="_blank" title="jQuery UI">jQuery UI</a>, <a href="http://twitter.github.com/bootstrap/index.html" target="_blank" title="bootstrap">Twitter-Bootstrap</a>.
+        <p>Developed by <a href="http://about.me/takeharu.oshida" target="_blank" title="about me">Takeharu.Oshida</a></p>
+        <p>Source code can be found on <a href="https://github.com/georgeOsdDev/webBoard" target="_blank">github</a>, licenced under <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.And Document can be found <a href="/docs" target="_blank">Here</a>.Thank you.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<a id="githubribbon" href="https://github.com/georgeosddev/webBoard" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<script type="text/javascript">
+  $(function(){
+      $("#footerMain").bind('closed',function(){
+        $("#githubribbon").hide();
+    });
+  })
+</script>
