@@ -160,7 +160,8 @@ function createObj(obj,selfFlg){
   var conts ="";
   switch(obj.type){
     case "postit":
-      conts = "<textarea class='post-"+obj.color+"' col='5' row='10'>Edit and Drag Me.</textarea>";
+      var text = obj.body || "Edit and Drag Me."
+      conts = "<textarea class='post-"+obj.color+"' col='5' row='10'>"+text+"</textarea>";
       break;
     case "stamp":
       conts ="<p style='color:"+obj.color+"'>&"+obj.stamp+";</p>";
