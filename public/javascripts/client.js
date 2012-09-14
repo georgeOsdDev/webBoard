@@ -192,7 +192,7 @@ function createObj(obj,selfFlg){
   // bind jquery.UI event
   $('#'+id).draggable(webBoard.draggableOption);
   $('#'+id).bind('closed',function(){
-    removeObj(obj,selfFlg);
+    removeObj(obj,true);
   });
   // watch inner text of postit
   $('#'+id+'> textarea').bind('keyup',function(){
