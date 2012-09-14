@@ -256,7 +256,6 @@ function stopMoving(event,ui){
 
 // move object with the data from server
 function moveObj(data){
-  console.log(data);
   var currentPosition = $('#' + data.id).position();
   if (data.top == currentPosition.top && data.left == currentPosition.left) return;
   $('#' + data.id).fadeOut("slow",function(){
@@ -280,6 +279,7 @@ function removeObj(data,selfFlg){
     }
   };
   if (selfFlg) toServer(sendData);
+  unLock(id);
 }
 
 // edit object's inner text
@@ -291,7 +291,6 @@ function editObj(data,selfFlg){
     }
     toServer(sendData);
   } else {
-    console.log(data);
     $('#'+data.id+'> textarea').val(data.body);
   }
 }
