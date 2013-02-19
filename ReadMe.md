@@ -5,8 +5,11 @@ Simple WhiteBoard Using WebSocket.
 It helps your team to have a discussion or brainstorming at online.
 
 ## DEMO
+[![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/georgeOsdDev/webBoard.png)](https://webops.nodejitsu.com#georgeosddev/webhooks)
 
-[visit demo](http://webboard.jit.su)
+Hosted at [Nodejitsu](http://opensource.nodejitsu.com/) as opensource project for free.
+
+Woohoo! Visit [Demo](http://webboard.jit.su)
 
 ## Getting Started
 
